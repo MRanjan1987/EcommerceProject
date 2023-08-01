@@ -8,7 +8,9 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -22,7 +24,7 @@ public class BaseTest {
 	public ExtentReports extent = ExtentReportUtility.ExtentReportInstance();
 	public static ExtentTest test;
 
-	@BeforeClass
+	@BeforeMethod
 	public void setUp() throws IOException {
 		fis = new FileInputStream(".//src//test//resources//properties//config.properties");
 		prop = new Properties();
@@ -35,13 +37,14 @@ public class BaseTest {
 				driver = new ChromeDriver();
 			}
 		}
+		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 	}
 
-	@AfterClass
+	
 	public void tearDown() {
 		driver.quit();
 	}

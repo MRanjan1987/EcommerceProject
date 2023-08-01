@@ -1,8 +1,13 @@
 package ecommerce.EcommerceProject.pageobjects;
 
 import java.io.IOException;
+import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 
@@ -45,5 +50,43 @@ public class BasePage extends BaseTest {
 
 		}
 
+	}
+
+	public WebElement WebdriverWait(String locator, int time) {
+
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+		WebElement waitForElement = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locator))));
+		return waitForElement;
+	}
+
+	public void getWindowAlertText() {
+		Alert alert = driver.switchTo().alert();
+		String aletText = alert.getText();
+		test.log(LogStatus.INFO, "Text on the alert is : " + aletText);
+	}
+
+	public void acceptWindowAlertText() {
+		Alert alert = driver.switchTo().alert();
+		String aletText = alert.getText();
+		test.log(LogStatus.INFO, "Click ok button on the alert which is appear after adding product into cart");
+	}
+
+	public void getText(String locator) {
+		String text = driver.findElement(By.xpath(locator)).getText();
+		test.log(LogStatus.INFO, text);
+	}
+
+	public void capturescreenshot() {
+		try {
+			ScreenShotUtility.captureScreenshot();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		// test.log(LogStatus.PASS, test.addScreenCapture(TestUtil.screenshotname));
+		test.log(LogStatus.INFO, test.addScreenCapture(ScreenShotUtility.screenshotname));
+		extent.endTest(test);
+		extent.flush();
 	}
 }
