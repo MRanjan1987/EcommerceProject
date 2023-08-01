@@ -6,8 +6,6 @@ public class CartPage extends BasePage {
 
 	public void PurchasePhones() throws IOException, InterruptedException {
 
-		LoginPage lp = new LoginPage();
-		lp.loginWithValidCredential();
 		WebdriverWait("//a[@id='logout2']", 30);
 		click("//div[@id='contcont']//a[2]", "Click on Phones button of product category");
 		click("//a[normalize-space()='Samsung galaxy s6']", "Click on Samsung galaxy s6");

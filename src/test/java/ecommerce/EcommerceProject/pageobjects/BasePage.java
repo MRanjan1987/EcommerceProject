@@ -67,7 +67,7 @@ public class BasePage extends BaseTest {
 
 	public void acceptWindowAlertText() {
 		Alert alert = driver.switchTo().alert();
-		String aletText = alert.getText();
+		alert.accept();
 		test.log(LogStatus.INFO, "Click ok button on the alert which is appear after adding product into cart");
 	}
 

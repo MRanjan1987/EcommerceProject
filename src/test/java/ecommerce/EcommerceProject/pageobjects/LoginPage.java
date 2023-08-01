@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class LoginPage extends BasePage {
 
-	public void loginWithValidCredential() throws IOException, InterruptedException {
+	public CartPage loginWithValidCredential() throws IOException, InterruptedException {
 
 		click("//a[@id='login2']", "Click on login button");
 		Thread.sleep(10);
@@ -15,5 +15,7 @@ public class LoginPage extends BasePage {
 		click("//button[normalize-space()='Log in']", "Click on login button on login form");
 		Thread.sleep(5000);
 		verifyEquals("//a[@id='nameofuser']", "Welcome mranjan");
+		return new CartPage();
 	}
+
 }

@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-02T04:17:14 IST" name="Login" finished-at="2023-08-02T04:17:28 IST" duration-ms="13901">
-    <groups>
-    </groups>
-    <test started-at="2023-08-02T04:17:14 IST" name="Cart" finished-at="2023-08-02T04:17:28 IST" duration-ms="13901">
-      <class name="ecommerce.EcommerceProject.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ecommerce.EcommerceProject.testcases.LoginPageTest@1e66f1f5]" started-at="2023-08-02T04:17:14 IST" name="setUp" finished-at="2023-08-02T04:17:21 IST" duration-ms="6659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test_Login_with_valid_credential()[pri:0, instance:ecommerce.EcommerceProject.testcases.LoginPageTest@1e66f1f5]" started-at="2023-08-02T04:17:21 IST" name="test_Login_with_valid_credential" finished-at="2023-08-02T04:17:27 IST" duration-ms="6422" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Login_with_valid_credential -->
-      </class> <!-- ecommerce.EcommerceProject.testcases.LoginPageTest -->
-    </test> <!-- Cart -->
-  </suite> <!-- Login -->
-  <suite started-at="2023-08-02T04:17:37 IST" name="allSuites" finished-at="2023-08-02T04:17:37 IST" duration-ms="0">
+  <suite started-at="2023-08-02T04:43:14 IST" name="allSuites" finished-at="2023-08-02T04:43:14 IST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- allSuites -->
-  <suite started-at="2023-08-02T04:17:28 IST" name="Cart" finished-at="2023-08-02T04:17:37 IST" duration-ms="9122">
+  <suite started-at="2023-08-02T04:42:56 IST" name="Cart" finished-at="2023-08-02T04:43:14 IST" duration-ms="18117">
     <groups>
     </groups>
-    <test started-at="2023-08-02T04:17:28 IST" name="Cart" finished-at="2023-08-02T04:17:37 IST" duration-ms="9122">
+    <test started-at="2023-08-02T04:42:56 IST" name="Cart" finished-at="2023-08-02T04:43:14 IST" duration-ms="18117">
       <class name="ecommerce.EcommerceProject.testcases.CartPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ecommerce.EcommerceProject.testcases.CartPageTest@3e96bacf]" started-at="2023-08-02T04:17:28 IST" name="setUp" finished-at="2023-08-02T04:17:29 IST" duration-ms="838" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ecommerce.EcommerceProject.testcases.CartPageTest@79d8407f]" started-at="2023-08-02T04:42:56 IST" name="setUp" finished-at="2023-08-02T04:43:04 IST" duration-ms="8232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="PurchasePhonesTest()[pri:0, instance:ecommerce.EcommerceProject.testcases.CartPageTest@3e96bacf]" started-at="2023-08-02T04:17:29 IST" name="PurchasePhonesTest" finished-at="2023-08-02T04:17:36 IST" duration-ms="7778" status="FAIL">
+        <test-method signature="PurchasePhonesTest()[pri:0, instance:ecommerce.EcommerceProject.testcases.CartPageTest@79d8407f]" started-at="2023-08-02T04:43:04 IST" name="PurchasePhonesTest" finished-at="2023-08-02T04:43:13 IST" duration-ms="8870" status="FAIL">
           <exception class="org.openqa.selenium.NoAlertPresentException">
             <message>
               <![CDATA[no such alert
@@ -39,9 +23,9 @@
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4812351b845fd630deaa7ed21d3884b3, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62771/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4812351b845fd630deaa7ed21d3884b3]]>
+Command: [b485b8539b14f353572b68b3b33af56f, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63631/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b485b8539b14f353572b68b3b33af56f]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
@@ -49,9 +33,9 @@ Session ID: 4812351b845fd630deaa7ed21d3884b3]]>
 Build info: version: '4.10.0', revision: 'c14d967899'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4812351b845fd630deaa7ed21d3884b3, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62771}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62771/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4812351b845fd630deaa7ed21d3884b3
+Command: [b485b8539b14f353572b68b3b33af56f, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63631/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b485b8539b14f353572b68b3b33af56f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -68,7 +52,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
 at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1084)
 at ecommerce.EcommerceProject.pageobjects.BasePage.getWindowAlertText(BasePage.java:63)
-at ecommerce.EcommerceProject.pageobjects.CartPage.PurchasePhones(CartPage.java:17)
+at ecommerce.EcommerceProject.pageobjects.CartPage.PurchasePhones(CartPage.java:15)
 at ecommerce.EcommerceProject.testcases.CartPageTest.PurchasePhonesTest(CartPageTest.java:15)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
