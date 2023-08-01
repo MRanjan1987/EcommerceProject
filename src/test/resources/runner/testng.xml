@@ -3,6 +3,7 @@
 
 <suite name="allSuites">
 	<suite-files>
+		<suite-file path="login2.xml" />
 		<suite-file path="cart.xml" />
 	</suite-files>
 </suite>

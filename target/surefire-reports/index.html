@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+      <span class="top-banner-font-1">3 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -35,6 +35,85 @@
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Login" class="navigator-link">
+              <span class="suite-name border-passed">Login</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Login" class="navigator-link ">
+                    <span>E:\New Eclipse workspace\EcommerceProject\src\test\resources\runner\Login2.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Login" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Login" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Login" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Login" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Login" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Login" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Login" class="hide-methods passed suite-Login"> (hide)</a> <!-- hide-methods passed suite-Login -->
+                      <a href="#" panel-name="suite-Login" class="show-methods passed suite-Login"> (show)</a> <!-- show-methods passed suite-Login -->
+                    </span>
+                    <div class="method-list-content passed suite-Login">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Login" title="ecommerce.EcommerceProject.testcases.LoginPageTest" class="method navigator-link" hash-for-method="test_Login_with_valid_credential">test_Login_with_valid_credential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Login -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
@@ -117,6 +196,23 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
+        <div panel-name="suite-Login" class="panel Login">
+          <div class="suite-Login-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ecommerce.EcommerceProject.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Login_with_valid_credential">
+                  </a> <!-- test_Login_with_valid_credential -->
+                  <span class="method-name">test_Login_with_valid_credential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Login-class-passed -->
+        </div> <!-- panel Login -->
         <div panel-name="suite-allSuites" class="panel allSuites">
         </div> <!-- panel allSuites -->
         <div panel-name="suite-Cart" class="panel Cart">
@@ -131,35 +227,56 @@
                   <a name="PurchasePhonesTest">
                   </a> <!-- PurchasePhonesTest -->
                   <span class="method-name">PurchasePhonesTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=115.0.5790.110)
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Please fill out Username and Password.}
+  (Session info: chrome=115.0.5790.110): Please fill out Username and Password.
 Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b485b8539b14f353572b68b3b33af56f, getAlertText {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63631}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63631/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b485b8539b14f353572b68b3b33af56f
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+Command: [a942687db83473247b0c39194348a3e5, findElement {using=xpath, value=//a[@id=&apos;nameofuser&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64764}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64764/devtoo..., se:cdpVersion: 115.0.5790.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a942687db83473247b0c39194348a3e5
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:130)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1084)
-	at ecommerce.EcommerceProject.pageobjects.BasePage.getWindowAlertText(BasePage.java:63)
-	at ecommerce.EcommerceProject.pageobjects.CartPage.PurchasePhones(CartPage.java:15)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at ecommerce.EcommerceProject.pageobjects.BasePage.verifyEquals(BasePage.java:32)
+	at ecommerce.EcommerceProject.pageobjects.LoginPage1.loginWithValidCredential(LoginPage1.java:17)
 	at ecommerce.EcommerceProject.testcases.CartPageTest.PurchasePhonesTest(CartPageTest.java:15)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 37 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Cart-class-failed -->
         </div> <!-- panel Cart -->
+        <div panel-name="test-xml-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\New Eclipse workspace\EcommerceProject\src\test\resources\runner\Login2.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Login&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ecommerce.EcommerceProject.listener.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Cart&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ecommerce.EcommerceProject.testcases.LoginPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Cart --&gt;
+&lt;/suite&gt; &lt;!-- Login --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="test-xml-allSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">E:\New Eclipse workspace\EcommerceProject\src\test\resources\runner\testng.xml</span>
@@ -170,6 +287,7 @@ Session ID: b485b8539b14f353572b68b3b33af56f
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;allSuites&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;suite-files&gt;
+    &lt;suite-file path=&quot;login2.xml&quot;/&gt;
     &lt;suite-file path=&quot;cart.xml&quot;/&gt;
   &lt;/suite-files&gt;
 &lt;/suite&gt; &lt;!-- allSuites --&gt;
@@ -197,6 +315,18 @@ Session ID: b485b8539b14f353572b68b3b33af56f
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="testlist-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Cart (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="testlist-allSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Tests for allSuites</span>
@@ -218,6 +348,13 @@ Session ID: b485b8539b14f353572b68b3b33af56f
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="group-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="group-allSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Groups for allSuites</span>
@@ -230,6 +367,35 @@ Session ID: b485b8539b14f353572b68b3b33af56f
             <span class="header-content">Groups for Cart</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Login');
+function tableData_Login() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'test_Login_with_valid_credential')
+data.setCell(0, 2, 'ecommerce.EcommerceProject.testcases.LoginPageTest')
+data.setCell(0, 3, 6404);
+window.suiteTableData['Login']= { tableData: data, tableDiv: 'times-div-Login'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Login">
+              </div> <!-- times-div-Login -->
+            </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-allSuites" class="panel">
@@ -275,15 +441,22 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'PurchasePhonesTest')
 data.setCell(0, 2, 'ecommerce.EcommerceProject.testcases.CartPageTest')
-data.setCell(0, 3, 8870);
+data.setCell(0, 3, 5768);
 window.suiteTableData['Cart']= { tableData: data, tableDiv: 'times-div-Cart'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Cart">
               </div> <!-- times-div-Cart -->
             </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Login</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="reporter-allSuites" class="panel">
@@ -300,6 +473,13 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
+        <div panel-name="ignored-methods-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
         <div panel-name="ignored-methods-allSuites" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
@@ -312,6 +492,23 @@ return data;
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Login" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ecommerce.EcommerceProject.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">test_Login_with_valid_credential</span>
+                <span class="method-start">8442 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-allSuites" class="panel">
@@ -336,7 +533,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">PurchasePhonesTest</span>
-                <span class="method-start">8234 ms</span>
+                <span class="method-start">935 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

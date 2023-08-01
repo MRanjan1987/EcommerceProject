@@ -1,7 +1,8 @@
 ecommerce\EcommerceProject\pageobjects\BasePage.class
 ecommerce\EcommerceProject\testcases\BaseTest.class
-ecommerce\EcommerceProject\pageobjects\LoginPage.class
+ecommerce\EcommerceProject\pageobjects\LoginPage1.class
 ecommerce\EcommerceProject\pageobjects\CartPage.class
+ecommerce\EcommerceProject\pageobjects\LoginPage2.class
 ecommerce\EcommerceProject\listener\Listener.class
 ecommerce\EcommerceProject\utility\ScreenShotUtility.class
 ecommerce\EcommerceProject\testcases\LoginPageTest.class
