@@ -13,6 +13,4 @@ Maven
 Features:
 
 Automated testing of login functionality
-Automated testing of registration functionality
-Automated testing of search functionality
-Automated testing of checkout process
+Automated testing of add item into cart to checkout process
